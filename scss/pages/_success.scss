@@ -1,0 +1,33 @@
+@import '../abstracts/variables';
+.success-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 120px;
+    margin-bottom: 100px;
+    img{
+        height: 400px;
+        width: 400px;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-family: $font-stack;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+}
+@media screen and (max-width: 799px) {
+    .success-container{
+        img{
+            height: 300px !important;
+            width: 300px !important;
+        }
+    }
+}

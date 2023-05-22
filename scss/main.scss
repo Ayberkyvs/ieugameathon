@@ -1,0 +1,19 @@
+// Abstracts
+@import "abstracts/variables";
+
+//Base 
+@import "base/reset";
+
+// Layout
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/footer";
+
+// Pages
+@import "pages/home";
+
+//layout
+@import "components/slider";
+@import "components/lightbox";
+@import 'components/annoucments';
+@import 'components/meet';

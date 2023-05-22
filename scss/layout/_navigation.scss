@@ -1,0 +1,133 @@
+.menu>li>a
+{
+    color: $third-color;
+    font-family:$font-stack;
+    font-size: 14px;
+    margin-left: 8px;
+}
+.inner-header .mainLogo
+{
+    float: left;
+    display: block;
+}
+.menu
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    overflow: hidden;
+    background-color: $primary-color;
+}
+.menu a
+{
+    display: block;
+    padding: 20px;
+    border-right: 1px solid $primary-color;
+    text-decoration: none;
+}
+.menu a:hover
+{
+    color: $fifth-color;
+}
+.inner-header .menu
+{
+    clear:both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+.inner-header .menu-icon
+{
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+.inner-header .menu-icon .nav-icon
+{
+    background:$third-color;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+.inner-header .menu-icon .nav-icon:before
+{
+    background: $third-color;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition:all .2s ease-out;
+    top:6px;
+}
+
+.inner-header .menu-icon .nav-icon:after
+{
+    background: $third-color;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition:all .2s ease-out;
+    top:-6px;
+}
+.inner-header .menu-btn
+{
+    display: none;
+}
+.inner-header .menu-btn:checked ~ .menu
+{
+    max-height: 240px;
+}
+.inner-header .menu-btn:checked ~ .menu-icon .nav-icon
+{
+    background:transparent;
+}
+.inner-header .menu-btn:checked ~ .menu-icon .nav-icon:before
+{
+    transform: rotate(-45deg);
+    top:0;
+}
+.inner-header .menu-btn:checked ~ .menu-icon .nav-icon:after
+{
+    transform: rotate(45deg);
+    top: 0;
+}
+@media (min-width:800px)
+{
+    .inner-header li{
+        float: left;
+    }
+    .inner-header li a
+    {
+        padding: 20px 30px;
+    }
+    .inner-header .menu 
+    {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .inner-header .menu-icon
+    {
+        display: none;
+    }
+    .inner-header
+    {
+        display: flex;
+    }
+    .menu
+    {
+        margin-right: 70px;
+        background-color: transparent;
+        li{
+            a{
+                font-size: 16px;
+            }
+        }
+    }
+}    

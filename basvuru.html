@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="tr">
+
+
+
+
+<!--
+
+██╗░░░██╗░█████╗░██╗░░░██╗░█████╗░░██████╗
+╚██╗░██╔╝██╔══██╗██║░░░██║██╔══██╗██╔════╝
+░╚████╔╝░███████║╚██╗░██╔╝███████║╚█████╗░
+░░╚██╔╝░░██╔══██║░╚████╔╝░██╔══██║░╚═══██╗
+░░░██║░░░██║░░██║░░╚██╔╝░░██║░░██║██████╔╝
+░░░╚═╝░░░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝╚═════╝░
+
+
+Unauthorized and misuse of codes is prohibited.
+All Rights Reserved.
+https://ayberkyavas.com
+
+
+
+-->
+    <head>
+        <meta name="theme-color" content="#004a8c"/>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Başvuru Yap | IEU Başvuru</title>
+        <meta name="description" content="İzmir Ekonomi Üniversitesi etkinlik başvuru sayfasıdır. Etkinliğe katılım için
+        gereken formu bu sayfada doldurabilirsiniz.">
+        <meta name="keywords" content="izmir,ekonomi,basvuru,gamejam,üniversite,ieu">
+        <meta name="author" content="ayberk yavas"/>
+        <link rel="stylesheet" href="css/basvuru.css"/>
+        <link rel="icon" type="image/x-icon" href="/img/header/favicon.png">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"/>
+        <!-- FONT ICIN -->
+        <link href='https://fonts.googleapis.com/css?family=Jost&display=swap' rel='stylesheet'>
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/ec613c6134.js" crossorigin="anonymous"></script>
+        <!-- RECAPTHA KEYS -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LerqxQmAAAAAIT2v12oaWnhc5p0ustXKS8_NpPX"></script>
+    </head>
+
+<div>
+  
+    <!--================ Loader Başlangıç =================-->
+      <div id="loader"></div>
+    <!--================ Loader Bitiş =================-->
+
+
+    <!--================ Demo Başlangıç =================-->
+
+  <div id="demo-div" class="rainbow">
+    <div id="inner-div">
+      <div class="social-links">
+      <a href="https://www.instagram.com/ieumyo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCURWfZ-wenSrGEBgLWSViVQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    </div>
+    </div>  
+  
+      <!--================ Demo Bitiş =================-->
+  
+      <!--================ Header Başlangıç =================-->
+      
+      <header>
+        <div class="header">
+          <div class="inner-header">
+          <div id="mainLogo" class="mainLogo">
+            <a href="main.html" style="text-decoration: none; color: black; cursor: pointer;"><img id="pcLogo" src="img/logo/pcLogo.png" alt="Logo"></a>
+            <a href="main.html" style="text-decoration: none; color: black; cursor: pointer;"><img id="mobilLogo" style="display: none;" src="img/logo/mobilLogo.png" alt="Logo"></a>
+          </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+          <li><a href="https://vs.ieu.edu.tr/cp/tr" target="_blank" style="text-transform:uppercase">IEUMYO</a></li>
+          <li><a href="basvuru.html" style="text-transform:uppercase">Başvuru</a></li>
+        </ul>  
+      </div>
+      </div>
+      </header>
+      
+      <!--================ Header Bitiş =================-->
+
+    <!--================ Main Alanı Başlangıç =================-->
+    <main>
+     <div class="main-container">
+      <div class="inner-main-container">
+
+      <section>
+      <div class="form-container">
+        <div class="col1-mg1">
+          <img src="img/basvuru/ieuvegamethon.png" alt="IEU Gameathon">
+        </div>
+        <div class="col2">
+          <div class="col2-mg1">
+          <h2>Etkinlik Başvuru Formu</h2>
+          </div>
+          <form class="col2-mg2" action="php/postrequest.php" method="post" autocomplete="on">
+            <div class="nameinfoContainer">
+              <div>
+              <label class="labelClass" for="name">Ad</label>
+              <input class="inputClass" type="text" id="name" name="name" placeholder=" " autofocus minlength="3" required>
+              </div>
+              <div>
+              <label class="labelClass" for="lname">Soyad</label>
+              <input class="inputClass" type="text" id="lname" name="lname" placeholder=" " minlength="3" required>
+              </div>
+            </div>
+            <div class="contactinfoContainer">
+              <div>
+                <label class="labelClass" for="phone">Telefon Numarası</label>
+                <input class="inputClass" type="tel" id="phone" name="phone" 
+                placeholder="05414050405" minlength="11" maxlength="11" pattern="{11}" required>
+                </div>
+                <div>
+                <label class="labelClass" for="email">E-posta</label>
+                <input class="inputClass" type="email" id="email" name="email" placeholder=" " required>
+                </div>
+            </div>
+            <div class="personalinfoContainer">
+              <div>
+                <label class="labelClass" for="tckimlikno">TC Numarası</label>
+                <input class="inputClass" type="text" id="tckimlikno" name="tckimlikno" onblur="tckimlikkontorolu(this);" maxlength="11" required>
+                </div>
+            </div>
+            <div class="checkboxContainer">
+              <div>
+                <input class="checkboxClass" type="checkbox" id="fname" name="fname" placeholder=" " required>
+                <label class="checkboxlabelClass"  for="fname">Kayıt olarak <a href="#">kullanım şartları</a>nı okuduğumu kabul ediyorum.</label>
+              </div>
+              <div>
+                <input class="checkboxClass" type="checkbox" id="fname" name="fname" placeholder=" " required>
+                <label class="checkboxlabelClass" for="fname"><a href="#">Gizlilik</a> ve <a href="#">kullanıcı kayıt şartları</a> sözleşmesini kabul ediyorum.</label>
+              </div>
+            </div>
+            <div class="recaptcha-container">
+              <div class="g-recaptcha" data-sitekey="6LerqxQmAAAAAIT2v12oaWnhc5p0ustXKS8_NpPX"></div>
+            </div>
+            <br/>
+            <div class="submitbuttonContainer">
+              <input type="submit" value="Kayıt Ol"></input>
+            </div>
+          </form>
+        </div>
+      </div>
+      </section>
+
+
+      </div>
+      </div>
+      </main>
+
+      <!--================ Main Alanı Bitiş =================-->
+
+        <!--================ Footer Alanı Başlangıç =================-->
+
+        <footer>
+          <div class="footer-container">
+            <div class="footer-col1">
+              <h2>İzmir Ekonomi Üniversitesi</h2>
+                <a href="https://www.izto.org.tr/tr/" target="_blank">
+                  <img src="img/svg/izto.png" alt="İzmir Ticaret Odası"></a>
+              <h2>İzmir Ticaret Odası Eğitim ve Sağlık Vakfı</h2>
+                <a href="https://iztovakfi.org/" target="_blank">
+                  <img src="img/svg/iztosaglik.png" alt="İzmir Ticaret Odası"></a>
+              <h2>kuruluşudur.</h2>
+            </div>
+    
+            <div class="footer-col2">
+              <div class="footer-col2-mg1">
+                <img src="img/svg/footer-logo-tr.png" alt="İzmir Ekonomi Üniversitesi Logosu"> 
+                <h2>Sakarya Caddesi No:156 <br>35330 Balçova - İzmir / TÜRKİYE</h2>
+              </div>
+    
+                <hr class="vertical-line">
+    
+                <div class="footer-col2-mg2">
+                  <img src="img/svg/gameathonLogo.png" alt="Gameathon Logosu">
+                  <ul>
+                    <li><a href="https://www.ieu.edu.tr/tr/tarihce" target="_self">Üniversite</a></li>
+                    <li><a href="https://www.ieu.edu.tr/tr/ieude-hayat" target="_self">Kampüs</a></li>
+                    <li><a href="https://www.ieu.edu.tr/international/en" target="_self">Uluslararası</a></li>
+                    <li><a href="https://www.ieu.edu.tr/tr/iletisim" target="_self">İletişim</a></li>
+                  </ul>
+                </div>
+    
+                <hr class="vertical-line">
+    
+                <div class="footer-col2-mg3">
+                  <img src="img/svg/kampusizmir.png">
+                  <h2>Bizi Takip Edin</h2>
+                  <div class="social-logos">
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-youtube"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-col3">
+                <a href="https://www.ayberkyavas.com" target="_blank"><h2 style="text-transform: uppercase;">Desıgned By YAVAS</h2></a>
+              </div>
+          </div>
+        </footer>
+    
+          <!--================ Footer Alanı Bitiş =================-->
+
+      <script src="js/main.js"></script>
+      <script src="js/kaydol.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

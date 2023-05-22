@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="tr">
+
+
+
+
+<!--
+
+██╗░░░██╗░█████╗░██╗░░░██╗░█████╗░░██████╗
+╚██╗░██╔╝██╔══██╗██║░░░██║██╔══██╗██╔════╝
+░╚████╔╝░███████║╚██╗░██╔╝███████║╚█████╗░
+░░╚██╔╝░░██╔══██║░╚████╔╝░██╔══██║░╚═══██╗
+░░░██║░░░██║░░██║░░╚██╔╝░░██║░░██║██████╔╝
+░░░╚═╝░░░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝╚═════╝░
+
+
+Unauthorized and misuse of codes is prohibited.
+All Rights Reserved.
+https://ayberkyavas.com
+
+
+
+-->
+    <head>
+        <meta name="theme-color" content="#004a8c"/>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Ana Sayfa | IEU Başvuru</title>
+        <meta name="description" content="İzmir Ekonomi Üniversitesi etkinlik başvuru sayfası ve
+        hakkında ki genel bilgiler bu sayfalarda yer almaktadır.">
+        <meta name="author" content="ayberk yavas"/>
+        <meta name="keywords" content="izmir,ekonomi,basvuru,gamejam,üniversite,ieu">
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="icon" type="image/x-icon" href="/img/header/favicon.png">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"/>
+        <!-- FONT ICIN -->
+        <link href='https://fonts.googleapis.com/css?family=Jost&display=swap' rel='stylesheet'>
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/ec613c6134.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+  
+    <!--================ Loader Başlangıç =================-->
+      <div id="loader">
+      
+      </div>
+    <!--================ Loader Bitiş =================-->
+
+     <!--================ Scrolldown Başlangıç =================-->
+
+     <div id="scrolldown">
+      
+     </div>
+
+     <!--================ Scrolldown Bitiş =================-->
+
+    <!--================ Demo Başlangıç =================-->
+
+  <div id="demo-div" class="rainbow">
+  <div id="inner-div">
+    <div class="social-links">
+    <a href="https://www.instagram.com/ieumyo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.youtube.com/channel/UCURWfZ-wenSrGEBgLWSViVQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  </div>
+  </div>  
+
+    <!--================ Demo Bitiş =================-->
+
+    <!--================ Header Başlangıç =================-->
+    
+    <header>
+      <div class="header">
+        <div class="inner-header">
+        <div id="mainLogo" class="mainLogo">
+          <a href="main.html" style="text-decoration: none; color: black; cursor: pointer;"><img id="pcLogo" src="img/logo/pcLogo.png" alt="Logo"></a>
+          <a href="main.html" style="text-decoration: none; color: black; cursor: pointer;"><img id="mobilLogo" style="display: none;" src="img/logo/mobilLogo.png" alt="Logo"></a>
+        </div>
+      <input class="menu-btn" type="checkbox" id="menu-btn"/>
+      <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+      <ul class="menu">
+        <li><a href="https://vs.ieu.edu.tr/cp/tr" target="_blank" style="text-transform:uppercase">IEUMYO</a></li>
+        <li><a href="basvuru.html" style="text-transform:uppercase">Başvuru</a></li>
+      </ul>  
+    </div>
+    </div>
+    </header>
+    
+    <!--================ Header Bitiş =================-->
+
+    <!--================ Main Alanı Başlangıç =================-->
+
+    <main>
+     <div class="main-container">
+      <div class="inner-main-container">
+
+        <!--================ Video Alanı Başlangıç =================-->
+        <section>
+        <div class="video-container">
+          <video src="img/home/gameathon.mp4" controls loop autoplay muted></video>
+          <!-- controls kapalı ve video default olarak muted isteğe gçre değişebilir.-->
+        </div>
+        </section>
+        <!--================ Video Alanı Bitiş =================-->
+        <br><br>
+        <!--================ Fotoğraf Grid Başlangıç =================-->
+        <section>
+        <div class="lightbox-container">
+        <h2 style="text-align:left; font-size: 30px !important;">Galeri</h2>
+        <br>
+        <div class="row">
+          <div class="column">
+            <img src="img/home/lightbox/lightbox1.webp" alt="Bilgisayar ve insanlar" style="width:100% !important; height: 100% !important;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/home/lightbox/lightbox2.webp" alt="Bilgisayar ve insanlar" style="width:100% !important; height: 100% !important;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/home/lightbox/lightbox3.webp" alt="Bilgisayar ve insanlar" style="width:100% !important; height: 100% !important;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/home/lightbox/lightbox4.webp" alt="Bilgisayar ve insanlar" style="width:100% !important; height: 100% !important;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="img/home/lightbox/lightbox1.webp" alt="Bilgisayar ve insanlar" style="width:100% !important; height: 100% !important;">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="img/home/lightbox/lightbox2.webp" alt="Bilgisayar ve insanlar" style="width:100% !important; height: 100% !important;">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="img/home/lightbox/lightbox3.webp" alt="Bilgisayar ve insanlar" style="width:100% !important; height: 100% !important;">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="img/home/lightbox/lightbox4.webp" alt="Bilgisayar ve insanlar" style="width:100% !important; height: 100% !important;">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+        <!--================ Fotoğraf Grid Bitiş =================-->
+      <br></br>
+      
+      <!--================ Duyuru Alanı Başlangıç =================-->
+      <section id="duyurular">
+      <div class="ann-container">
+        <div class="ann-head">
+          <h2>Duyurular</h2>
+        </div>
+        <div class="ann-body">
+          <div class="content-container">
+            <div class="content-texts">
+            <h6>22 mayıs</h6>
+            <h2>Gameathon Ödülleri</h2>
+            <h5>Gameathon Konuşalım Etkinliğinde 200 TL'lik 15 adet Steam cüzdan kodu hediye edilecektir. 
+              Katılmak için salonda bulunan QR kodları ile kayıt yaptırabilirsiniz.</h5>
+            </div>
+            <div class="content-photo-container">
+              <div class="content-photo">
+                <img src="img/home/ann/steam.webp" alt="Duyuru fotoğrafı">
+              </div>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="content-texts">
+
+            <h6>22 mayıs</h6>
+            <h2>Gameathon x Brodeus</h2>
+            <h5>Gameathon Konuşalım Etkinliğine Brodeus Firması katılım gösterecektir.</h5>
+
+            </div>
+            <div class="content-photo-container">
+              <div class="content-photo">
+                <img src="img/home/ann/brodeus.webp" alt="Duyuru fotoğrafı">
+              </div>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="content-texts">
+
+            <h6>22 mayıs</h6>
+            <h2>Sonraki Gameathon Etkinliği</h2>
+            <h5>Bir sonraki Gameathon etkinliği 17-18 Kasım 2023 tarihlerinde 
+              Mobil Oyun Geliştirme yarışması olarak düzenlenecektir.</h5>
+
+            </div>
+            <div class="content-photo-container">
+              <div class="content-photo">
+                <img src="img/home/lightbox/lightbox4.webp" alt="Duyuru fotoğrafı">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <br><br>
+      <!--================ Duyuru Alanı Bitiş =================-->
+
+      <!--================ Juriler Başlangıç =================-->
+      <section>
+        <div class="meet-container">
+          <div class="meet-head">
+            <h2>Juriler ile Tanış</h2>
+          </div>
+          <div class="meet-body">
+            <div class="meet-content-container">
+              <div class="meet-content-photo" id="mc-photo-1">
+              </div>
+              <div class="meet-content-texts">
+                <h3>M.Emir İlgün</h3>
+                <h6>PRODUCER</h6>
+                <h5></h5>
+              </div>
+            </div>
+            <div class="meet-content-container">
+              <div class="meet-content-photo" id="mc-photo-2">
+              </div>
+              <div class="meet-content-texts">
+                <h3>Burak Alaca</h3>
+                <h6>LEAD UNITY DEVELOPER</h6>
+                <h5></h5>
+              </div>
+            </div>
+            <div class="meet-content-container">
+              <div class="meet-content-photo" id="mc-photo-3">
+              </div>
+              <div class="meet-content-texts">
+                <h3>Tolga Çelik</h3>
+                <h6>ART DIRECTOR</h6>
+                <h5></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--================ Duyuru Alanı Bitiş =================-->
+
+    </div>
+    </div>
+    </main>
+    <!--================ Main Alanı Bitiş =================-->
+
+    <!--================ Footer Alanı Başlangıç =================-->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col1">
+          <h2>İzmir Ekonomi Üniversitesi</h2>
+            <a href="https://www.izto.org.tr/tr/" target="_blank">
+              <img src="img/svg/izto.png" alt="İzmir Ticaret Odası"></a>
+          <h2>İzmir Ticaret Odası Eğitim ve Sağlık Vakfı</h2>
+            <a href="https://iztovakfi.org/" target="_blank">
+              <img src="img/svg/iztosaglik.png" alt="İzmir Ticaret Odası"></a>
+          <h2>kuruluşudur.</h2>
+        </div>
+
+        <div class="footer-col2">
+          <div class="footer-col2-mg1">
+            <img src="img/svg/footer-logo-tr.png" alt="İzmir Ekonomi Üniversitesi Logosu"> 
+            <h2>Sakarya Caddesi No:156 <br>35330 Balçova - İzmir / TÜRKİYE</h2>
+          </div>
+
+            <hr class="vertical-line">
+
+            <div class="footer-col2-mg2">
+              <img src="img/svg/gameathonLogo.png" alt="Gameathon Logosu">
+              <ul>
+                <li><a href="https://www.ieu.edu.tr/tr/tarihce" target="_self">Üniversite</a></li>
+                <li><a href="https://www.ieu.edu.tr/tr/ieude-hayat" target="_self">Kampüs</a></li>
+                <li><a href="https://www.ieu.edu.tr/international/en" target="_self">Uluslararası</a></li>
+                <li><a href="https://www.ieu.edu.tr/tr/iletisim" target="_self">İletişim</a></li>
+              </ul>
+            </div>
+
+            <hr class="vertical-line">
+
+            <div class="footer-col2-mg3">
+              <img src="img/svg/kampusizmir.png" alt="Kampüs İzmir">
+              <h2>Bizi Takip Edin</h2>
+              <div class="social-logos">
+              <a href="https://www.instagram.com/ieumyo/" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
+              <a href="https://www.youtube.com/channel/UCURWfZ-wenSrGEBgLWSViVQ" target="_blank" class="fa fa-youtube" aria-hidden="true"></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-col3">
+            <a href="https://www.ayberkyavas.com" target="_blank"><h2 style="text-transform: uppercase;">Desıgned By YAVAS</h2></a>
+          </div>
+      </div>
+    </footer>
+
+      <!--================ Footer Alanı Bitiş =================-->
+      <script src="js/main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
